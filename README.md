@@ -1,2 +1,2 @@
-Projeto Clone Netflix
-###Projeto criado com React 
+# Projeto Clone Netflix
+### Projeto criado com React 
