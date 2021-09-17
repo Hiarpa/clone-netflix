@@ -59,11 +59,11 @@ export default {
         if(midiaId){
             switch(type){
                 case 'movie':
-                    info = await basicFetch(`movie/${midiaId}?language=pt-BR&api_key=${API_KEY}`);
+                    info = await basicFetch(`/movie/${midiaId}?language=pt-BR&api_key=${API_KEY}`);
                 break;
 
                 case 'tv':
-                    info = await basicFetch(`tv/${midiaId}?language=pt-BR&api_key=${API_KEY}`);
+                    info = await basicFetch(`/tv/${midiaId}?language=pt-BR&api_key=${API_KEY}`);
                 break;
 
                 default:
