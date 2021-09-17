@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import './App.css';
-import Tmdb from "./Tmdb";
+import './styles/App.css';
+import Tmdb from "./utils/Tmdb";
 import MovieRow from './components/MovieRow';
 import FeaturedMovie from "./components/FeaturedMovie";
 
@@ -20,7 +20,6 @@ function App() {
       let chosen = originals[0].items.results[randomChosen]
       let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv')
       setFeaturedData(chosenInfo)
-     
     }
 
     loadAll();
